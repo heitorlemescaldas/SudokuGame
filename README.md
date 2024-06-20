@@ -32,7 +32,4 @@ Finalizando o Jogo
 - Se você completar o Sudoku corretamente, uma mensagem de parabéns será exibida e você será redirecionado para um novo jogo.
 - Se você esgotar suas tentativas, uma mensagem será exibida e você será redirecionado para um novo jogo.
 
-Considerações Finais
-- Certifique-se de salvar seu progresso regularmente para evitar perda de dados.
-- Se encontrar qualquer problema ou tiver dúvidas, entre em contato com o suporte técnico.
-- Agradecemos por usar nossa aplicação de Sudoku. Divirta-se jogando e melhorando suas habilidades de resolução de problemas!
+Agradeço por usar nossa aplicação de Sudoku. Divirta-se jogando e melhorando suas habilidades de resolução de problemas!
