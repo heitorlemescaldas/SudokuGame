@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+Manual de Usuário - Sudoku App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Introdução ao Sudoku
+O Sudoku é um popular jogo de lógica baseado em números, onde o objetivo é preencher uma grade de 9x9 com dígitos de modo que cada coluna, cada linha e cada uma das nove subgrades 3x3 que compõem a grade (também chamadas de "caixas") contenham todos os números de 1 a 9.
 
-## Available Scripts
+Funcionalidades da Aplicação
+Nossa aplicação de Sudoku permite que os usuários se registrem, façam login, joguem Sudoku e vejam seus resultados. O aplicativo é dividido em várias seções, conforme descrito abaixo.
 
-In the project directory, you can run:
+Registro
 
-### `npm start`
+- Acesse a página inicial e clique no botão "Registrar".
+- Preencha os campos de nome de usuário, e-mail e senha.
+- Clique no botão "Registrar" para criar sua conta.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Login
+- Acesse a página inicial e clique no botão "Login".
+- Insira seu nome de usuário e senha.
+- Clique no botão "Login" para acessar sua conta.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Jogando Sudoku
+- Após fazer login, você será redirecionado para a página do jogo.
+- Uma grade de Sudoku será exibida. Os quadrados pré-preenchidos não podem ser alterados.
+- Preencha os quadrados vazios com números de 1 a 9 de modo que cada linha, coluna e caixa contenham todos os números de 1 a 9 sem 
+repetir.
+- Use as setas do teclado para navegar pelos quadrados.
+- Clique no botão "Fazer Tentativa" para verificar se a solução está correta. Você tem até 3 tentativas para resolver o Sudoku.
 
-### `npm test`
+Dificultador
+- A cada 30 segundos, um número aleatório será removido da grade para aumentar o desafio.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Finalizando o Jogo
+- Se você completar o Sudoku corretamente, uma mensagem de parabéns será exibida e você será redirecionado para um novo jogo.
+- Se você esgotar suas tentativas, uma mensagem será exibida e você será redirecionado para um novo jogo.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Considerações Finais
+- Certifique-se de salvar seu progresso regularmente para evitar perda de dados.
+- Se encontrar qualquer problema ou tiver dúvidas, entre em contato com o suporte técnico.
+- Agradecemos por usar nossa aplicação de Sudoku. Divirta-se jogando e melhorando suas habilidades de resolução de problemas!

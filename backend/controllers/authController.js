@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const { User } = require('../models');  // ou const User = require('../models/user');
+const { User } = require('../models');  // Importação correta do modelo User
 
 exports.register = async (req, res) => {
   const { username, email, password } = req.body;
@@ -17,6 +17,8 @@ exports.register = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 10);
     const user = await User.create({ username, email, password: hashedPassword });
+    const token = jwt.sign({ id: user.id }, process.env.SECRET_KEY, { expiresIn: '1h' });
+    res.status(201).json({ token });
     res.status(201).send('Usuário criado com sucesso.');
   } catch (error) {
     console.error('Error during registration:', error);

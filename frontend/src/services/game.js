@@ -1,13 +1,11 @@
 import api from './api';
 
-export const createGame = () => {
-  return api.post('/game/create');
-};
-
-export const submitResult = (result) => {
-  return api.post('/result/submit', result);
-};
-
-export const getRanking = () => {
-  return api.get('/result/ranking');
+export const saveResult = async (data) => {
+  try {
+    const response = await api.post('/result', data);
+    return response.data;
+  } catch (error) {
+    console.error('Error saving result:', error);
+    throw error;
+  }
 };

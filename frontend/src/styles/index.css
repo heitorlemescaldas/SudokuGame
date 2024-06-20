@@ -1,46 +1,84 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
 }
 
-header {
-  background-color: #333;
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header, main, footer {
+  width: 100%;
+  text-align: center;
+}
+
+button, input[type="submit"] {
+  background-color: #007BFF;
   color: white;
-  padding: 1rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
 }
 
-header nav ul {
-  list-style: none;
+button:hover, input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input[type="number"] {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  margin: 2px;
+}
+
+.sudoku {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sudoku-row {
+  display: flex;
+}
+
+.sudoku-cell {
+  border: 1px solid #ddd;
+}
+
+.incorrect {
+  background-color: #ffcccc;
+}
+
+nav ul {
+  list-style-type: none;
   padding: 0;
 }
 
-header nav ul li {
+nav ul li {
   display: inline;
-  margin-right: 1rem;
+  margin: 0 10px;
 }
 
-header nav ul li a,
-header nav ul li button {
-  color: white;
+a {
   text-decoration: none;
+  color: #007BFF;
 }
 
-main {
-  padding: 2rem;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
-
-input {
-  font-size: 1rem;
-  padding: 0.5rem;
+a:hover {
+  text-decoration: underline;
 }
