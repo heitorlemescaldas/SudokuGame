@@ -2,7 +2,6 @@ Manual de Usuário - Sudoku App
 
 O Sudoku é um popular jogo de lógica baseado em números, onde o objetivo é preencher uma grade de 9x9 com dígitos de modo que cada coluna, cada linha e cada uma das nove subgrades 3x3 que compõem a grade (também chamadas de "caixas") contenham todos os números de 1 a 9.
 
-Funcionalidades da Aplicação
 Nossa aplicação de Sudoku permite que os usuários se registrem, façam login, joguem Sudoku e vejam seus resultados. O aplicativo é dividido em várias seções, conforme descrito abaixo.
 
 Registro
