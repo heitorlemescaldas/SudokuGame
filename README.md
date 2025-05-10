@@ -11,23 +11,52 @@ Registro
 - Clique no botão "Registrar" para criar sua conta.
 
 Login
+
 - Acesse a página inicial e clique no botão "Login".
 - Insira seu nome de usuário e senha.
 - Clique no botão "Login" para acessar sua conta.
 
 Jogando Sudoku
+
 - Após fazer login, você será redirecionado para a página do jogo.
 - Uma grade de Sudoku será exibida. Os quadrados pré-preenchidos não podem ser alterados.
-- Preencha os quadrados vazios com números de 1 a 9 de modo que cada linha, coluna e caixa contenham todos os números de 1 a 9 sem 
-repetir.
+- Preencha os quadrados vazios com números de 1 a 9 de modo que cada linha, coluna e caixa contenham todos os números de 1 a 9 sem
+  repetir.
 - Use as setas do teclado para navegar pelos quadrados.
 - Clique no botão "Fazer Tentativa" para verificar se a solução está correta. Você tem até 3 tentativas para resolver o Sudoku.
 
 Dificultador
+
 - A cada 30 segundos, um número aleatório será removido da grade para aumentar o desafio.
 
 Finalizando o Jogo
+
 - Se você completar o Sudoku corretamente, uma mensagem de parabéns será exibida e você será redirecionado para um novo jogo.
 - Se você esgotar suas tentativas, uma mensagem será exibida e você será redirecionado para um novo jogo.
 
 Agradeço por usar nossa aplicação de Sudoku. Divirta-se jogando e melhorando suas habilidades de resolução de problemas!
+
+## 🐳 Executando com Docker
+
+### Pré-requisitos
+
+- Docker instalado: [Instruções oficiais](https://docs.docker.com/get-docker/)
+
+### Como rodar a aplicação
+
+1. Clone o repositório e entre no diretório:
+
+   ```bash
+   git clone https://github.com/heitorlemescaldas/SudokuGame.git
+
+   cd SudokuGame
+
+   docker-compose up --build
+
+   Acesse a aplicação:
+
+   Frontend: http://localhost:3000
+   Backend: http://localhost:5000
+
+   docker-compose down
+   ```
